@@ -22,7 +22,7 @@ ACC = CM.diagonal() / CM.sum(axis=1)
 
 data = []
 for i in range(8):
-    data.append({"class": names[str(i)], "precision": P[i], "recall": R[i], "F1 score": F1[i],
+    data.append({"class": names[str(i)], "precision": P[i], "recall": R[i], "F1 score": F1[i], "accuracy": ACC[i],
                  "total instances": sum([1 if x == str(i) else 0 for x in y_trues])})
 
 df = pd.DataFrame(data=data)
