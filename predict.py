@@ -41,7 +41,7 @@ def get_max_labels(tups, def_right=torch.tensor(2), def_left=torch.tensor(7)):
 
 
 model = torch.hub.load('ultralytics/yolov5', model='custom',
-                       path=fr".\best_run_ep_100_ba_16_opt_adamw_FINAL\weights\best.pt",
+                       path=fr".\best.pt",
                        source='github')
 
 
