@@ -51,6 +51,10 @@ def predict(file_path=None, array=None, from_path=False):
         - file name: name of file without suffix
         - array: image representation by an array
         - from_path: using path or array to run the prediction, if true use path otherwise use array
+    
+    predicts the labels and bounding boxes in the given frame
+    
+    Return: prediction representation (xywh like requested and xyxy used by bbv to create the prediction video for later use).
     """
     if from_path:
         frame = cv2.imread(file_path)
